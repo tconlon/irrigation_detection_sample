@@ -1,0 +1,24 @@
+parent_dir:  '/Volumes/sel_external/ethiopia_irrigation_share'
+trained_models_dir: '../trained_models'
+results_dir: '../performance_results'
+
+# Model input and dataset params
+input_channels: 1
+num_timesteps: 36
+num_classes: 2
+dim_size: 64
+shuffle_buffer: 1000
+max_batches_per_epoch: 20
+
+# Training params
+num_epochs: 1
+base_batch_size: 64
+
+load_existing: False
+pretrained_model: '20211026-162946'
+
+shift_train_val: True
+max_shift: 3
+
+train: True
+test: True
